@@ -1,12 +1,11 @@
-.active_class{
-    font-weight: bold;
-}
-
 .nav-link {
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
     transition: 0.1s;
+    color: #0000FF !important;
+    padding: 2px !important;
+    padding-bottom: 5px !important;
 }
 
 .nav-link:after {
@@ -17,12 +16,17 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: orange;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
 }
   
 .nav-link:hover:after {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    transform-origin: bottom left; 
+}
+
+.nav-link:active:after{
+    transform: scaleX(1);
+    transform-origin: bottom left; 
 }
