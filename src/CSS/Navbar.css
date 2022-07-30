@@ -24,7 +24,7 @@ nav {
 .dropdown-item.active, .dropdown-item:active {
     color: orange;
     text-decoration: none;
-    background-color: rgb(194, 189, 180);
+    background-color: white;
 }
 
   @media all and (min-width: 992px) {

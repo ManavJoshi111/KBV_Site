@@ -2,7 +2,7 @@ import React from 'react'
 
 const Admission = () => {
     return (
-        <div>Admission</div>
+        <h1 class="text-center">Admission</h1>
     )
 }
 

@@ -39,11 +39,16 @@ const Navbar = () => {
                 >
                   Activities
                 </NavLink>
+                className="nav-link dropdown-toggle "
               </li>*/}
 
               
               <li className="nav-item dropdown">
-			<NavLink className="nav-link dropdown-toggle "  to="/" data-bs-toggle="dropdown">Activities</NavLink>
+			<NavLink  className={({ isActive }) =>
+                    "nav-link active" +
+                    (isActive ? " active_class" : "") 
+
+                  } to="" data-bs-toggle="dropdown">Activities</NavLink>
 		    <ul className="dropdown-menu fade-up">
 			  <li><NavLink className="dropdown-item " to="/acti_1">Acti_1</NavLink></li>
 			  <li><NavLink className="dropdown-item " to="/acti_2">Acti_2</NavLink></li>

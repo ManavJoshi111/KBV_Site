@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div>About</div>
+        <h1 class="text-center">About</h1>
     )
 }
 
