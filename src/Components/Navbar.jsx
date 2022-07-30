@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import "../CSS/Navbar.css";
-
+import Header from './Header';
 
 const Navbar = () => {
 //   const [Toggle, setToggle] = useState(false);
@@ -45,9 +45,7 @@ const Navbar = () => {
               
               <li className="nav-item dropdown">
 			<NavLink  className={({ isActive }) =>
-                    "nav-link active" +
-                    (isActive ? " active_class" : "") 
-
+                    "nav-link active" 
                   } to="" data-bs-toggle="dropdown">Activities</NavLink>
 		    <ul className="dropdown-menu fade-up">
 			  <li><NavLink className="dropdown-item " to="/acti_1">Acti_1</NavLink></li>
@@ -135,7 +133,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      
+      {/* <Header/> */}
     </>
   );
 };

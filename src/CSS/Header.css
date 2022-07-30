@@ -1,0 +1,47 @@
+
+:root {
+    --primary: #06BBCC;
+    --light: #F0FBFC;
+    --dark: #181d38;
+}
+.container-fluid .background_img{
+    background: rgba(50, 70, 80, 0.7);
+    overflow: hidden;
+    height: 100%; 
+    /* width: 100vw; */
+}
+  
+#bg-img{
+    background: url("https://mdbootstrap.com/img/Photos/Others/images/76.jpg");   
+    overflow: hidden;
+    color: #FFFFFF;
+    /* position: absolute; */
+    background-size: cover;
+    height: 400px;  
+    /* width: 100vw; */
+}
+
+
+/*** Service ***/
+.service-item {
+    background: var(--light);
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    background: var(--primary);
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
+
+
+.wow{
+    cursor: default;
+}
