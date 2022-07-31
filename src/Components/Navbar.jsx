@@ -1,20 +1,19 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import "../CSS/Navbar.css";
-import Header from './Header';
 
 const Navbar = () => {
-//   const [Toggle, setToggle] = useState(false);
-//   console.log(Toggle);
+  //   const [Toggle, setToggle] = useState(false);
+  //   console.log(Toggle);
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light ">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
-        <NavLink className="navbar-brand" to="/">Logo</NavLink>
-          <div
-            className="collapse navbar-collapse "
-            id="navbarSupportedContent"
-          >
+          <NavLink className="navbar-brand" to="/">Logo</NavLink>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto me-5">
               <li className="nav-item">
                 <NavLink
@@ -26,42 +25,25 @@ const Navbar = () => {
                   Home
                 </NavLink>
               </li>
-              {/*}
-              <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    "nav-link active" +
-                    (isActive ? " active_class" : "") 
-
-                  }
-                  aria-current="page"
-                  to="/activites"
-                >
-                  Activities
-                </NavLink>
-                className="nav-link dropdown-toggle "
-              </li>*/}
-
-              
               <li className="nav-item dropdown">
-			<NavLink  className={({ isActive }) =>
-                    "nav-link active" 
-                  } to="" data-bs-toggle="dropdown">Activities</NavLink>
-		    <ul className="dropdown-menu fade-up">
-			  <li><NavLink className="dropdown-item " to="/acti_1">Acti_1</NavLink></li>
-			  <li><NavLink className="dropdown-item " to="/acti_2">Acti_2</NavLink></li>
+                <NavLink className={({ isActive }) =>
+                  "nav-link active"
+                } to="" data-bs-toggle="dropdown">Activities</NavLink>
+                <ul className="dropdown-menu fade-up">
+                  <li><NavLink className="dropdown-item " to="/acti_1">Acti_1</NavLink></li>
+                  <li><NavLink className="dropdown-item " to="/acti_2">Acti_2</NavLink></li>
 
-			  <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
-        <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
-			  <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
-		    </ul>
-		</li>
-              
+                  <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
+                  <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
+                  <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
+                </ul>
+              </li>
+
               <li className="nav-item">
                 <NavLink
                   className={({ isActive }) =>
                     "nav-link active" +
-                    (isActive ? " active_class" : "") 
+                    (isActive ? " active_class" : "")
                   }
                   aria-current="page"
                   to="/Admission"
@@ -73,7 +55,7 @@ const Navbar = () => {
                 <NavLink
                   className={({ isActive }) =>
                     "nav-link active" +
-                    (isActive ? " active_class" : "") 
+                    (isActive ? " active_class" : "")
                   }
                   aria-current="page"
                   to="/Academics"
@@ -85,7 +67,7 @@ const Navbar = () => {
                 <NavLink
                   className={({ isActive }) =>
                     "nav-link active" +
-                    (isActive ? " active_class" : "") 
+                    (isActive ? " active_class" : "")
                   }
                   aria-current="page"
                   to="/achievements"
@@ -97,7 +79,7 @@ const Navbar = () => {
                 <NavLink
                   className={({ isActive }) =>
                     "nav-link active" +
-                    (isActive ? " active_class" : "") 
+                    (isActive ? " active_class" : "")
                   }
                   aria-current="page"
                   to="/hostel"
@@ -109,7 +91,7 @@ const Navbar = () => {
                 <NavLink
                   className={({ isActive }) =>
                     "nav-link active" +
-                    (isActive ? " active_class" : "") 
+                    (isActive ? " active_class" : "")
                   }
                   aria-current="page"
                   to="/about"
@@ -121,7 +103,7 @@ const Navbar = () => {
                 <NavLink
                   className={({ isActive }) =>
                     "nav-link active" +
-                    (isActive ? " active_class" : "") 
+                    (isActive ? " active_class" : "")
                   }
                   aria-current="page"
                   to="/contact"
