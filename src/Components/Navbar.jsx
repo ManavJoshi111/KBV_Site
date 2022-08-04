@@ -30,12 +30,8 @@ const Navbar = () => {
                   "nav-link active"
                 } to="" data-bs-toggle="dropdown">Activities</NavLink>
                 <ul className="dropdown-menu fade-up">
-                  <li><NavLink className="dropdown-item " to="/acti_1">Acti_1</NavLink></li>
-                  <li><NavLink className="dropdown-item " to="/acti_2">Acti_2</NavLink></li>
-
-                  <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
-                  <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
-                  <li><NavLink className="dropdown-item " to="/">No Page</NavLink></li>
+                  <li><NavLink className="dropdown-item " to="/acti_1">Activity</NavLink></li>
+                  <li><NavLink className="dropdown-item " to="/acti_2">Activity</NavLink></li>
                 </ul>
               </li>
 

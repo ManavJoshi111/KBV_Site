@@ -14,7 +14,10 @@ const Contact = () => {
 
 
             <div className="box">
-                <div className="icon"><i className="fa fa-map-marker"></i>
+                <div className="icon">
+                <span class="material-symbols-outlined text-dark h1" >
+location_on
+</span>
                 </div>
                 <div className="text">
                     <h3>Address</h3>
@@ -24,7 +27,9 @@ const Contact = () => {
             </div>
 
             <div className="box">
-                <div className="icon"><i className="fa fa-phone"></i>
+                <div className="icon"><span class="material-symbols-outlined text-dark h1">
+call
+</span>
                 </div>
                 <div className="text">
                     <h3>Phone</h3>
@@ -34,7 +39,9 @@ const Contact = () => {
             </div>
 
             <div className="box">
-                <div className="icon"><i className="fa fa-envelope-o"></i>
+                <div className="icon"><span class="material-symbols-outlined text-dark h1">
+mail
+</span>
                 </div>
                 <div className="text">
                     <h3>Email</h3>
