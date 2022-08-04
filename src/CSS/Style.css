@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
 #contact-bg-imag{
     background: url("https://img.freepik.com/free-vector/gradient-dark-dynamic-lines-background_23-2148995950.jpg?w=1060&t=st=1659613461~exp=1659614061~hmac=de026f533439b5ec73b0286f3a15389ade74c3d1816d7098ddbb67aba326bd99");   
     overflow: hidden;
@@ -6,12 +13,6 @@
     background-size: cover;
     height: 400px;  
     /* width: 100vw; */
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
 }
 
 nav{
@@ -55,7 +56,6 @@ nav{
     width: 100%;
     padding: 50px 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://mdbootstrap.com/img/Photos/Others/images/76.jpg");
